@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наш первый html</title>
+</head>
+<body>
+
+<style>
+  .beautiful_button {
+    background-color: #2ea44f;
+      border: 1px solid rgba(27, 31, 35, .15);
+      border-radius: 6px;
+      color: #fff;
+      cursor: pointer;
+      font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      padding: 6px 16px;
+      text-align: center;
+  }
+
+  h1 {
+    color: blue;
+  }
+</style>
+
+<script>
+   function changeClass() {
+      const elem = document.getElementById("common_button");
+      elem.className = 'beautiful_button';
+      console.log('Кнопка теперь красивая!')
+    }
+</script>
+
+
+  <button  onclick="changeClass()"  id="common_button">Кнопка</button>
+
+<br>
+<br>
+<br>
+
+  <div style="display: inline;">
+    Блочный
+  </div>
+  <div  style="display: inline;">
+    Блочный
+  </div> <div  style="display: inline;">
+    Блочный
+  </div>
+
+
+  <span>
+    Строчный
+  </span>
+  <span>
+    Строчный
+  </span>  <span>
+    Строчный
+  </span>  <span>
+    Строчный
+  </span>
+  <p>
+    Text
+  </p>
+ <h1 class="group1"  id="header"  >Hello World!!!!</h1> 
+ <h1 class="group1" id="header1"  >Hello World!!!!</h1> 
+ <h1 class="group2" id="header2"  >Hello World!!!!</h1> 
+
+ 
+ <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_5VlVbgU_f0XOsECRZk78diWROQYyNegJ3w&s">link</a>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_5VlVbgU_f0XOsECRZk78diWROQYyNegJ3w&s" alt="" />
+
+
+
+</body>
+</html>
