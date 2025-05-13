@@ -4,43 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Семантическая верстка</title>
+  <!-- подключение стилей -->
+  <link rel="stylesheet" href="./style.css">
+
 </head>
-<body>
+
+<body class="dark">
   <header>
     <h1>Сайт-визитка Лукиной Анны</h1>
     <p>Завари себе кофию да надкуси булочку, почитывая мой блог</p>
+   
     <nav>
-      <ul>
+      <ul class="navigation">
         <li><a href="./index.html">Главная</a></li>
         <li><a href="./blog.html">Блог</a></li>
         <li><a href="./projects.html">Проекты</a></li>
         <li><a href="./presentations.html">Доклады</a></li>
         <li><a href="./resume.html">Резюмешечка для работодателей</a></li>
-
       </ul>
     </nav>
+
   </header>
-  <main>
-    <aside>
-      <section>
-        <h2>Боковой блок</h2>
-        <p>Пусть тут будет список моих популярных статей</p>
-      </section>
-    </aside>
-    <article>
-      <section>
+
+  <main class="container">
+
+    <article class='bloks_element'>
+      <section class="block">
         <h2>Первый блок</h2>
         <p>Тут будет краткая информация обо мне</p>
         <img width="200" height="200" src="./img/my_photo.png" alt="Воть моя фотокарточка">
       </section>
     
-      <section>
+      <section  class="block">
         <h2>Второй блок</h2>
         <p>Пока не придумала о чем он будет</p>
       </section>
     </article>
+
+    <aside class="aside_block">
+      <section>
+        <h2>Боковой блок</h2>
+        <p>Пусть тут будет список моих популярных статей</p>
+
+        <p class="aside_article">Статья о котиках</p>
+        <p class="aside_article">Статья о тестах</p>
+        <p class="aside_article">Статья о флексбоксах</p>
+
+      </section>
+    </aside>
   </main>
-  <footer>
+  <footer class="footer">
     <p>А сюда я добавлю ссылки на мои соцсети и гитхаб</p>
     <ol>
       <li><a href="">Гитхаб</a></li>
