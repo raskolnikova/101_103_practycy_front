@@ -1,94 +1,123 @@
-h1 {color: blue; font-size: 2em;}
+body {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 
-/* nav {
-  font-size: 20px;
-  color: red;
-} */
-
-
-a {
-  color: red;
+  background-color: #f3f6f0;
 }
 
-a {
-  color: black;
-}
-
-.article_img {
-  /* width: 200px;
-  height: 200px; */
-  width: 50%;
+li {
+  /* уберем точки */
+  list-style: none;
 }
 
 .navigation {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 10px
 }
 
-li {
-  list-style: none;
-}
 
+/* разделим на две части основной контент */
 .container {
   display: flex;
-  gap: 10px;
+  flex-direction: row-reverse;
   justify-content: space-between;
+  gap: 10px;
+}
+
+/* Тут задаем пропорции флекс-элементам 1 к 2 */
+.aside_element {
+  flex-grow: 1;
+
+  /* стили для боковых статей */
+  background-color: #e7d1d4;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.blocks_element {
+  flex-grow: 2;
+
+  /* стили для блоков */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 
-.aside_block {
-  background-color: #F79B72;
+
+.block {
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  /* transition: transform .1s; */
+  padding: 5px;
+}
+
+.aside_article {
+  padding: 5px;
+}
+
+/* пример с псеводклассом и анимацией*/
+.aside_article:hover {
+  background-color: #d1b5d1;
+  border-radius: 5px;
+
+  /* делаем плавное изменение цвета при наведении */
+  transition: background-color 1s;
+}
+
+header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  background-color: #e0e6c5;
   border-radius: 10px;
   padding: 5px;
 }
 
-.bloks_element{
-  background-color: #DDDDDD;
-  border-radius: 10px;
-}
+footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-.navigation{
-  background-color: #DAD4EF;
+  background-color: #e0e6c5;
   border-radius: 10px;
-padding: 10px;;
-}
+  padding: 5px;
 
-.footer{
   display: flex;
-  background-color: #DAD4EF;
+  flex-direction: column;
+}
+
+img {
+  border-radius: 10px;
+}
+
+/* ------------------------------------ */
+/* стили для страницы с блогом */
+
+.articles {
+  display: flex;
+  gap: 5px;
+
+  /* перенос элементов */
+  flex-wrap: wrap;
+}
+
+.article {
+  background-color: #e7d1d4;
   border-radius: 10px;
   padding: 10px;
+  width: 350px;
 }
 
-
-.aside_article {
-display: flex;
-background-color: #DAD4EF;
-}
-
-.aside_article:hover {
-background-color: #B9A394;
-transition: background-color 1s;
-}
-
-@media (max-width:500px) {
-
+/* --------------------------------------- */
+/* Адаптив для мобилок */
+/* при экране меньше 500 по ширине навигация будет в колонку */
+@media (max-width: 500px) {
   .navigation {
     display: flex;
     flex-direction: column;
   }
-
 }
-
-
-.dark {
-  background-color: black;
-}
-
-.list{
-  background: var(--code-bg);
-}
-.dark{
-  --theme: rgb(29, 30, 32);
-  --entry: rgb(46, 46, 51);

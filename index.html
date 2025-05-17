@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Семантическая верстка</title>
-  <!-- подключение стилей -->
+
+  <!-- тут подключим наши стили -->
   <link rel="stylesheet" href="./style.css">
 
+  <!-- тут добавим красивый шрифт Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
-<body class="dark">
-  <header>
-    <h1>Сайт-визитка Лукиной Анны</h1>
-    <p>Завари себе кофию да надкуси булочку, почитывая мой блог</p>
-   
+<body>
+
+  <header class="header">
     <nav>
       <ul class="navigation">
         <li><a href="./index.html">Главная</a></li>
@@ -23,40 +28,40 @@
         <li><a href="./resume.html">Резюмешечка для работодателей</a></li>
       </ul>
     </nav>
-
+    <h1>Сайт-визитка Лукиной Анны</h1>
+    <p>Завари себе кофию да надкуси булочку, почитывая мой блог</p>
   </header>
 
   <main class="container">
+    <aside class="aside_element">
+      <section>
+        <h2>Боковой блок</h2>
+        <p class="aside_article">Статья о котиках и способах их дрессировки</p>
+        <p class="aside_article">Статья о тестах во фронте</p>
+        <p class="aside_article">Статья о флексбоксах</p>
+      </section>
+    </aside>
 
-    <article class='bloks_element'>
+    <article class="blocks_element">
       <section class="block">
         <h2>Первый блок</h2>
         <p>Тут будет краткая информация обо мне</p>
+        <p>Например что я занимаюсь фронтендом больше пяти лет, а разработкой уже 10 лет</p>
         <img width="200" height="200" src="./img/my_photo.png" alt="Воть моя фотокарточка">
       </section>
-    
-      <section  class="block">
+
+      <section class="block">
         <h2>Второй блок</h2>
         <p>Пока не придумала о чем он будет</p>
       </section>
     </article>
 
-    <aside class="aside_block">
-      <section>
-        <h2>Боковой блок</h2>
-        <p>Пусть тут будет список моих популярных статей</p>
-
-        <p class="aside_article">Статья о котиках</p>
-        <p class="aside_article">Статья о тестах</p>
-        <p class="aside_article">Статья о флексбоксах</p>
-
-      </section>
-    </aside>
   </main>
+
   <footer class="footer">
     <p>А сюда я добавлю ссылки на мои соцсети и гитхаб</p>
-    <ol>
-      <li><a href="">Гитхаб</a></li>
+    <ol class="navigation">
+      <li><a href="https://github.com/raskolnikova">Гитхаб</a></li>
       <li><a href="">Телеграмм</a></li>
       <li><a href="">Линкидин</a></li>
     </ol>
