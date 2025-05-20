@@ -7,19 +7,30 @@
   <title>Семантическая верстка</title>
 
   <!-- тут подключим наши стили -->
-  <link rel="stylesheet" href="./style.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
 
   <!-- тут добавим красивый шрифт Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+
+ <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 <body>
 
+  <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+
   <header class="header">
-    <nav>
+    <nav >
       <ul class="navigation">
         <li><a href="./index.html">Главная</a></li>
         <li><a href="./blog.html">Блог</a></li>
@@ -29,7 +40,8 @@
       </ul>
     </nav>
     <h1>Сайт-визитка Лукиной Анны</h1>
-    <p>Завари себе кофию да надкуси булочку, почитывая мой блог</p>
+
+    <p class="red-text text-darken-2">Завари себе кофию да надкуси булочку, почитывая мой блог</p>
   </header>
 
   <main class="container">
@@ -58,13 +70,40 @@
 
   </main>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <p>А сюда я добавлю ссылки на мои соцсети и гитхаб</p>
     <ol class="navigation">
       <li><a href="https://github.com/raskolnikova">Гитхаб</a></li>
       <li><a href="">Телеграмм</a></li>
       <li><a href="">Линкидин</a></li>
     </ol>
-  </footer>
+  </footer> -->
+
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a href="https://github.com/raskolnikova">
+                      <i class="material-icons">access_time</i>
+                    Гитхаб</a></li>
+                  <li><a href="">Телеграмм</a></li>
+                  <li><a href="">Линкидин</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
 </body>
 </html>
