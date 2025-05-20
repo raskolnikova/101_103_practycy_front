@@ -121,3 +121,8 @@ img {
     flex-direction: column;
   }
 }
+
+/* пример с переопределением цветов в бутстрапе */
+/* .list-group-item-primary {
+  background-color: red !important;
+} */
